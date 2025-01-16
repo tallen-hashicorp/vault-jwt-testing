@@ -14,6 +14,9 @@ This will configure vault and run the following steps
 export VAULT_ADDR='http://127.0.0.1:8200'
 export VAULT_TOKEN=
 
+cd jwt-generator
+npm install
+node app.js
 ```
 
 # Manual Vault Config
