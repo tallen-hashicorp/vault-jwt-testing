@@ -9,6 +9,7 @@
   "author": "Tyler Allen (tyler.allen@hashicorp.com)",
   "license": "ISC",
   "dependencies": {
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "node-vault": "^0.10.2"
   }
 }

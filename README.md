@@ -10,6 +10,12 @@ openssl rsa -in jwt_key -pubout -outform PEM -out jwt_key.pub
 This will configure vault and run the following steps
 * TODO
 
+```bash
+export VAULT_ADDR='http://127.0.0.1:8200'
+export VAULT_TOKEN=
+
+```
+
 # Manual Vault Config
 
 ## Configure Vault
