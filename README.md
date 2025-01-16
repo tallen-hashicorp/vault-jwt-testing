@@ -27,5 +27,5 @@ vault write auth/jwt/role/demo-role role_type="jwt" user_claim="sub" bound_subje
 
 ## Login to vault
 ```bash
-vault write auth/jwt/login role=demo-role jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2wqcxYXVsdCIsImlhdCI6MTczNzAyNzU1M30.y4H9aNirtIGg6KyUzijl098dTUZwRKitEJ0b6weueOVTqWRwPfiucweIM2-bUbFC9Yt9y_uaxUodXiFvxts4MAxG-KZfxpJSNreKIA6sQqwUHFZE-mAhQOndCKr5GDAygqK6XYFJFgMUOBqenLvWWvZB4Qz5DxJM5jrsQhN_FMjcXqXv8jptNBY1l_CLt98OvQ2DS5HxuQ8cYiQgN88Wsgg3nX2XeTQhZKlCDwXK2xu1PNooVx-NzGt3TGGA_JlYL8Uu746HOzU2vrEK6AKcOOoFg_sSHxmsrNoVVZTgVaxsUCAs2c0fodJR_Wc-WM79hqr5RtnK1M0KQAR5nhepRA
+vault write auth/jwt/login role=demo-role jwt=
 ```
