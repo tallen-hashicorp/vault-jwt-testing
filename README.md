@@ -8,6 +8,5 @@ ssh-keygen -f jwt_key -y -m pem > jwt_key.pem.pub
 
 ## Configure Vault
 ```bash
-vault auth enable jwt
-vault write auth/jwt/config jwt_validation_pubkeys=@jwtRS256.key.pub
+
 ```
