@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
-const { type } = require('os');
 
 var vaultOptions = {
     apiVersion: 'v1',
@@ -26,7 +25,7 @@ async function configVault(){
             type: "jwt"
         });
     }catch(e){
-        console.log(" path is already in use at jwt")
+        console.log("path is already in use at jwt")
     }
 
     console.log("Config JWT")
@@ -38,7 +37,9 @@ async function configVault(){
     await vault.write('auth/jwt/role/demo-role', {
         role_type: "jwt",
         user_claim: "sub",
-        bound_subject: "vault"
+        bound_subject: "vault",
+        token_ttl: "1h",
+        token_max_ttl: "1h",
     })
 }
 
@@ -48,9 +49,9 @@ vault write auth/jwt/login role=demo-role jwt=
 async function loginVaultJWT(token){
     var login = await vault.write('auth/jwt/login', {
         role: 'demo-role',
-        jwt: token
+        jwt: token,
     })
-    console.log(login.auth.client_token)
+    console.log(login)
 }
 
 
